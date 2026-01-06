@@ -10,6 +10,7 @@ DallasTemperature sensors(&oneWire);
 void setup() {
   Serial.begin(9600);
   sensors.begin();
+  sensors.setResolution(12);    // résolution du capteur, de 9 à 12 bits
 }
 
 // Debut du loop
